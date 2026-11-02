@@ -1,0 +1,60 @@
+{
+  "model_name": "YOLO26m-sem",
+  "seed": 42,
+  "data_config": "configs/data.example.json",
+  "data": {
+    "eval_long_side": 1024,
+    "num_classes": 4,
+    "ignore_index": 255,
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "imgsz": 1024,
+    "names": {
+      "0": "asphalt",
+      "1": "concrete",
+      "2": "unpaved"
+    }
+  },
+  "model": {
+    "protocol": "P1",
+    "weights": "external_weights/yolo26m-sem.pt",
+    "yaml": "yolo26m-sem.yaml",
+    "pretrained": true
+  },
+  "train": {
+    "epochs": 100,
+    "batch_size": 8,
+    "optimizer": "AdamW",
+    "lr0": 0.001,
+    "lrf": 0.01,
+    "weight_decay": 0.0005,
+    "warmup_epochs": 3,
+    "cos_lr": true,
+    "mosaic": 0.0,
+    "scale": 0.5,
+    "translate": 0.1,
+    "fliplr": 0.5,
+    "amp": true,
+    "patience": 20,
+    "num_workers": 2
+  },
+  "eval": {
+    "batch_size": 1
+  },
+  "paper_checkpoint": {
+    "selected_epoch": 53,
+    "parameters": 14309960,
+    "prediction_mode": "raw_logits",
+    "pretraining": "Cityscapes supervised semantic segmentation"
+  }
+}

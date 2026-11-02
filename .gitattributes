@@ -1,0 +1,3 @@
+weights/best.pt filter=lfs diff=lfs merge=lfs -text
+weights/pretrained/model.safetensors filter=lfs diff=lfs merge=lfs -text
+weights/swin_t/model.safetensors filter=lfs diff=lfs merge=lfs -text

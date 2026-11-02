@@ -1,0 +1,21 @@
+{
+  "input_long_side": 768,
+  "reference_long_side": 1024,
+  "preserve_aspect_ratio": true,
+  "pad_stride": 32,
+  "precision": "float32",
+  "forward_passes": 1,
+  "test_time_augmentation": false,
+  "top_quarter": "After score restoration, set prediction and reference rows [0, ceil(0.25*H)) to background; include in metrics",
+  "classes": {
+    "0": "background",
+    "1": "asphalt",
+    "2": "concrete",
+    "3": "unpaved"
+  },
+  "boundary_widths_reference_pixels": [
+    2,
+    5,
+    10
+  ]
+}

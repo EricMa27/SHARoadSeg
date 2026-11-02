@@ -1,0 +1,64 @@
+{
+  "model_name": "Mask2Former",
+  "seed": 42,
+  "data_config": "configs/data.example.json",
+  "data": {
+    "eval_long_side": 1024,
+    "num_classes": 4,
+    "ignore_index": 255,
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "crop_size": 512,
+    "eval_input_long_side": 768,
+    "class_names": {
+      "0": "background",
+      "1": "asphalt",
+      "2": "concrete",
+      "3": "unpaved"
+    }
+  },
+  "model": {
+    "name": "mask2former",
+    "protocol": "P1",
+    "hf_id": "weights/pretrained",
+    "backbone": "swin-tiny",
+    "num_labels": 4,
+    "pretrained": true
+  },
+  "train": {
+    "epochs": 50,
+    "batch_size": 2,
+    "grad_accum": 8,
+    "lr": 0.0001,
+    "backbone_lr_mult": 0.1,
+    "weight_decay": 0.05,
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "warmup_iters": 1000,
+    "clip": 0.01,
+    "amp": true,
+    "ema": true,
+    "num_workers": 2
+  },
+  "eval": {
+    "batch_size": 2
+  },
+  "paper_checkpoint": {
+    "selected_epoch": 23,
+    "parameters": 47403647,
+    "prediction_mode": "semantic",
+    "pretraining": null
+  }
+}

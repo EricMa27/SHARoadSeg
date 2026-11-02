@@ -1,0 +1,11 @@
+numpy==2.2.6
+opencv-python==5.0.0.93
+transformers==5.20.1
+timm==1.0.30
+Pillow==12.2.0
+scipy==1.15.3
+safetensors==0.8.0
+huggingface-hub==2.2.0
+tokenizers==0.23.3
+torch==2.6.0
+torchvision==0.21.0

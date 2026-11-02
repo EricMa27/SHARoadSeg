@@ -1,0 +1,74 @@
+{
+  "attention_file": "figure4_attention.npz",
+  "rows": [
+    {
+      "id": "fig4_asphalt_01",
+      "material": "asphalt",
+      "query": 80,
+      "display_id": "1fa65917",
+      "metadata": {
+        "3": {
+          "query": 80,
+          "null_mass": 0.9999297857284546,
+          "spatial_mass": 7.023545185802504e-05
+        },
+        "6": {
+          "query": 80,
+          "null_mass": 0.9999526739120483,
+          "spatial_mass": 4.731515218736604e-05
+        },
+        "9": {
+          "query": 80,
+          "null_mass": 0.9999209642410278,
+          "spatial_mass": 7.903494406491518e-05
+        }
+      }
+    },
+    {
+      "id": "fig4_concrete_01",
+      "material": "concrete",
+      "query": 74,
+      "display_id": "7eb1f81d",
+      "metadata": {
+        "3": {
+          "query": 74,
+          "null_mass": 0.9999977350234985,
+          "spatial_mass": 2.235135980299674e-06
+        },
+        "6": {
+          "query": 74,
+          "null_mass": 0.9999942779541016,
+          "spatial_mass": 5.702047474187566e-06
+        },
+        "9": {
+          "query": 74,
+          "null_mass": 0.9999926090240479,
+          "spatial_mass": 7.449974873452447e-06
+        }
+      }
+    },
+    {
+      "id": "fig4_unpaved_01",
+      "material": "unpaved",
+      "query": 80,
+      "display_id": "3c153070",
+      "metadata": {
+        "3": {
+          "query": 80,
+          "null_mass": 0.9999997615814209,
+          "spatial_mass": 2.5359230448884773e-07
+        },
+        "6": {
+          "query": 80,
+          "null_mass": 0.9999991059303284,
+          "spatial_mass": 9.488614978181431e-07
+        },
+        "9": {
+          "query": 80,
+          "null_mass": 0.9999929666519165,
+          "spatial_mass": 6.984161700529512e-06
+        }
+      }
+    }
+  ]
+}

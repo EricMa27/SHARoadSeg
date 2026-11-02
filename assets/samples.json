@@ -1,0 +1,96 @@
+[
+  {
+    "id": "fig3_asphalt_01",
+    "material": "asphalt",
+    "paper_panels": [
+      {
+        "figure": 1,
+        "panel": "input image"
+      },
+      {
+        "figure": 3,
+        "row": 1
+      }
+    ]
+  },
+  {
+    "id": "fig3_asphalt_02",
+    "material": "asphalt",
+    "paper_panels": [
+      {
+        "figure": 3,
+        "row": 2
+      }
+    ]
+  },
+  {
+    "id": "fig3_concrete_01",
+    "material": "concrete",
+    "paper_panels": [
+      {
+        "figure": 3,
+        "row": 3
+      }
+    ]
+  },
+  {
+    "id": "fig3_concrete_02",
+    "material": "concrete",
+    "paper_panels": [
+      {
+        "figure": 3,
+        "row": 4
+      }
+    ]
+  },
+  {
+    "id": "fig3_unpaved_01",
+    "material": "unpaved",
+    "paper_panels": [
+      {
+        "figure": 3,
+        "row": 5
+      }
+    ]
+  },
+  {
+    "id": "fig3_unpaved_02",
+    "material": "unpaved",
+    "paper_panels": [
+      {
+        "figure": 3,
+        "row": 6
+      }
+    ]
+  },
+  {
+    "id": "fig4_asphalt_01",
+    "material": "asphalt",
+    "paper_panels": [
+      {
+        "figure": 4,
+        "row": 1
+      }
+    ]
+  },
+  {
+    "id": "fig4_concrete_01",
+    "material": "concrete",
+    "paper_panels": [
+      {
+        "figure": 4,
+        "row": 2
+      }
+    ]
+  },
+  {
+    "id": "fig4_unpaved_01",
+    "material": "unpaved",
+    "paper_panels": [
+      {
+        "figure": 4,
+        "row": 3
+      }
+    ]
+  }
+]

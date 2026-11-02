@@ -1,0 +1,59 @@
+{
+  "model_name": "PSPNet",
+  "seed": 42,
+  "data_config": "configs/data.example.json",
+  "data": {
+    "eval_long_side": 1024,
+    "num_classes": 4,
+    "ignore_index": 255,
+    "normalize": {
+      "mean": [
+        0.485,
+        0.456,
+        0.406
+      ],
+      "std": [
+        0.229,
+        0.224,
+        0.225
+      ]
+    },
+    "crop_size": 512,
+    "eval_input_long_side": 768,
+    "class_names": {
+      "0": "background",
+      "1": "asphalt",
+      "2": "concrete",
+      "3": "unpaved"
+    }
+  },
+  "model": {
+    "name": "smp_baseline",
+    "tag": "smp_pspnet_resnet50",
+    "protocol": "P1",
+    "arch": "pspnet",
+    "encoder_name": "resnet50",
+    "pretrained": true,
+    "num_classes": 4
+  },
+  "train": {
+    "epochs": 25,
+    "batch_size": 8,
+    "lr": 0.0003,
+    "weight_decay": 0.01,
+    "warmup_epochs": 2,
+    "amp": true,
+    "num_workers": 2,
+    "loss": "ce_dice",
+    "grad_clip": 1.0
+  },
+  "eval": {
+    "batch_size": 4
+  },
+  "paper_checkpoint": {
+    "selected_epoch": 24,
+    "parameters": 24314820,
+    "prediction_mode": "raw_logits",
+    "pretraining": "ImageNet ResNet50 encoder"
+  }
+}

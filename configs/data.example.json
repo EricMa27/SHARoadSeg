@@ -1,0 +1,6 @@
+{
+  "images_dir": "../external_data/images",
+  "labels_dir": "../external_data/labels",
+  "manifest": "../external_data/manifest.csv",
+  "splits_dir": "../external_data/splits"
+}

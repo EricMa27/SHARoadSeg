@@ -1,0 +1,6 @@
+{
+  "images_dir": "images",
+  "mask_dir": "masks",
+  "manifest": "manifest.csv",
+  "examples_only": true
+}
